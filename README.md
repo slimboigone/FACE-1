@@ -43,3 +43,9 @@ pip install tensorflow keras numpy pandas matplotlib opencv-python scikit-learn 
   - python try_me_out.py --mode live
 - Live webcam test (with face detection boxes)
   - python try_me_out.py --mode live_box
+
+# Dataset
+Dataset: UTKFace - Age, Gender, and Ethnicity Dataset
+- Kaggle Source: https://www.kaggle.com/datasets/nipunarora8/age-gender-and-ethnicity-face-data-csv
+- Original Website: https://susanqq.github.io/UTKFace/
+- Google Drive Download Link: https://drive.google.com/drive/folders/1HROmgviy4jUUUaCdvvrQ8PcqtNg2jn3G
