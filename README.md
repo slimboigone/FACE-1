@@ -9,6 +9,7 @@ Predicts age, gender, and ethnicity from face images using a multi-output CNN tr
 - Handles preprocessing: resizing to 128x128 and normalizing images.
 
 # Project Structure
+```
 Classifier_Model/
 │
 ├─ data/                        # raw UTKFace images
@@ -29,7 +30,7 @@ Classifier_Model/
 ├─ Human_Classifier.ipynb       # training + exploration notebook
 ├─ try_me_out.py                # testing/inference script
 └─ README.md
-
+```
 
 # Setup
 1. Install dependencies:
