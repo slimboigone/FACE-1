@@ -41,11 +41,11 @@ pip install tensorflow keras numpy pandas matplotlib opencv-python scikit-learn 
 
 2. Run in Terminal (Options)
 - Static image test (if image exists in directory)
-  - python try_me_out.py --mode static --image "test/<FirstName_LastName>.jpg"
+  - py try_me_out.py --mode static --image "test/<FirstName_LastName>.jpg"
 - Live webcam test (no boxes)
-  - python try_me_out.py --mode live
+  - py try_me_out.py --mode live
 - Live webcam test (with face detection boxes)
-  - python try_me_out.py --mode live_box
+  - py try_me_out.py --mode live_box
 
 # Dataset
 Dataset: UTKFace - Age, Gender, and Ethnicity Dataset
