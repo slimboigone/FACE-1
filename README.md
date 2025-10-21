@@ -3,6 +3,9 @@ Predicts age, gender, and ethnicity from face images using a multi-output CNN tr
 
 # Features
 - Predicts age (regression), gender (binary classification), and ethnicity (5-class classification) simultaneously.
+  - [age]     → 0–116 (person's age)
+  - [gender]  → male, female
+  - [race]    → 0 = White, 1 = Black, 2 = Asian, 3 = Indian, 4 = Others
 - Supports static image input for testing.
 - Supports live webcam input with optional face bounding boxes.
 - Uses early stopping and learning rate scheduling to prevent overfitting.
