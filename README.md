@@ -19,10 +19,10 @@ Could implement Batch Normalization to help stabilize and accelerate training, a
 ```
 Classifier_Model/
 │
-├─ data/                        # raw UTKFace images
-├─ data_clean/                  # cleaned valid images
+├─ data/                        # raw UTKFace images (not included in the repository)
+├─ data_clean/                  # cleaned valid images (not included in the repository)
 │
-├─ data_clearing_scripts/       # (typo fix: 'cleaing' → 'clearing')
+├─ data_cleaning_scripts/       # python scripts for validating and cleaning the dataset
 │   ├─ data_naming_validation.py
 │   ├─ jpg_check.py
 │   └─ size_check.py
@@ -46,9 +46,9 @@ Classifier_Model/
 pip install tensorflow keras numpy pandas matplotlib opencv-python scikit-learn pillow
 
 2. Run in Terminal
-  2a. Go to correct directory
+  - 2a. Go to correct directory
     - cd ~/<file_path>/Classifier_Model
-  2b. Run command
+  - 2b. Run command
     - Static image test (if image exists in directory)
       - py try_me_out.py --mode static --image "test_imgs/<FirstName_LastName>.jpg"
     - Live webcam test (no boxes)
