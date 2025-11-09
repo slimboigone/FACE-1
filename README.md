@@ -1,6 +1,10 @@
 # FACE-1
 Predicts age, gender, and ethnicity from face images using a multi-output CNN trained on the UTKFace dataset. Supports real-time webcam inference, with preprocessing, early stopping, and learning rate scheduling for optimized performance.
 
+# Future Considerations
+Could implement Batch Normalization to help stabilize and accelerate training, and update the image resizing to higher resolutions such as 224×224 <-> 512×512 to capture more facial details.
+
+
 # Features
 - Predicts age (regression), gender (binary classification), and ethnicity (5-class classification) simultaneously.
   - [age]     → 0–116 (person's age)
@@ -23,12 +27,14 @@ Classifier_Model/
 │   ├─ jpg_check.py
 │   └─ size_check.py
 │
-├─ test/
+├─ models/
+│   ├─ face1_model.h5           # trained model 1
+│   ├─ face1_model.h5           # optional duplicate (newer saved format)
+│   └─ upcoming_models...       # trained model n
+│
+├─ test_imgs/
 │   ├─ Jensen_Huang.jpg         # test image
 │   └─ ....jpg                  # test images
-│
-├─ face1_model.h5               # trained model
-├─ face1_model.keras            # optional duplicate (newer saved format)
 │
 ├─ Human_Classifier.ipynb       # training + exploration notebook
 ├─ try_me_out.py                # testing/inference script
@@ -39,13 +45,16 @@ Classifier_Model/
 1. Install dependencies:
 pip install tensorflow keras numpy pandas matplotlib opencv-python scikit-learn pillow
 
-2. Run in Terminal (Options)
-- Static image test (if image exists in directory)
-  - py try_me_out.py --mode static --image "test/<FirstName_LastName>.jpg"
-- Live webcam test (no boxes)
-  - py try_me_out.py --mode live
-- Live webcam test (with face detection boxes)
-  - py try_me_out.py --mode live_box
+2. Run in Terminal
+  2a. Go to correct directory
+    - cd ~/<file_path>/Classifier_Model
+  2b. Run command
+    - Static image test (if image exists in directory)
+      - py try_me_out.py --mode static --image "test_imgs/<FirstName_LastName>.jpg"
+    - Live webcam test (no boxes)
+      - py try_me_out.py --mode live
+    - Live webcam test (with face detection boxes)
+      - py try_me_out.py --mode live_box
 
 # Dataset
 Dataset: UTKFace - Age, Gender, and Ethnicity Dataset

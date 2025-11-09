@@ -5,14 +5,14 @@ from PIL import Image
 from tensorflow.keras.models import load_model
 
 # Load trained model
-# model = load_model("D:/python/Classifier_Model/face1_model.h5")
-model = load_model("D:/python/Classifier_Model/face1_model.keras") # Change file path if needed
+# model = load_model("D:/python/Classifier_Model/models/face1_model.h5")
+model = load_model("D:/python/Classifier_Model/models/face1_model.keras") # Change file path if needed
 
 # # Static image test
-# py try_me_out.py --mode static --image "test/Lebron_James.jpg"
-# py try_me_out.py --mode static --image "test/Donald_Trump.jpg"
-# py try_me_out.py --mode static --image "test/Barack_Obama.jpg"
-# py try_me_out.py --mode static --image "test/Kim_Chae-won.jpg"
+# py try_me_out.py --mode static --image "test_imgs/Lebron_James.jpg"
+# py try_me_out.py --mode static --image "test_imgs/Donald_Trump.jpg"
+# py try_me_out.py --mode static --image "test_imgs/Barack_Obama.jpg"
+# py try_me_out.py --mode static --image "test_imgs/Kim_Chae-won.jpg"
 
 # # Live webcam test (no boxes)
 # py try_me_out.py --mode live
